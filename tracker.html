@@ -1,0 +1,142 @@
+gsa application
+gsa kemu - 
+kemu site,
+kemu system
+
+matt vm
+ben bkcheetah
+
+fowa
+sxsw
+cheque
+
+med
+
+register - modal, Can't find your school? Email us and we'll get it added in 
+bookcheetah marketplace text
+loading bar, no slidetoggle
+slower slides
+acc - horizontal arrangement
+bookshelf and wishlist display 
+single book display - largeimg
+accountbyuser, myaccount -> 'My books'
+home books on a shelf
+
+login - tw, fb, forgot pass
+contactus - form validation, mail send
+donate
+forum - register, captcha
+customer-service test
+contactus
+designs
+
+blog - footer, data
+
+slides and pager match
+
+links on home panes
+
+
+add to wishlist
+  pop up
+  social share, like
+add to bookshelf
+	sellonamazon check
+  social share, like
+
+localsellers localbuyers
+viewallsellers viewallbuyers
+geocoder
+mailing - on book-user match
+register - sch modal
+scrolling bookshelf popup on ipad
+mozilla legend align right
+
+reducing latency
+================
+download stuff in bulk
+use caching as much as posible
+images - minimize jpgs, not pngs
+js - bundle it
+
+
+
+working with a mission, a higher motive than money, a drive, a purpose, a calling
+stress reduced by far
+really business-like
+really disciplined
+need more real coders
+need more motivated pple
+
+wordpress
+admin
+serengeti9
+
+
+exam ttb - fri
+
+
+
+<VirtualHost 127.0.0.1:80>
+  ServerName bkcheetah.old
+  DocumentRoot "C:/xampp/htdocs/bkcheetah/web"
+  DirectoryIndex index.php
+  <Directory "C:/xampp/htdocs/bkcheetah/web">
+    AllowOverride All
+    Allow from All
+  </Directory>
+
+  Alias /sf C:/xampp/htdocs/bkcheetah/lib/vendor/symfony/data/web/sf
+  <Directory "C:/xampp/htdocs/bkcheetah/lib/vendor/symfony/data/web/sf">
+    AllowOverride All
+    Allow from All
+  </Directory>
+</VirtualHost>
+
+<VirtualHost 127.0.0.1:80>
+  ServerName bkcheetahgit.old
+  DocumentRoot "C:/xampp/htdocs/bkcheetahgit/web"
+  DirectoryIndex index.php
+  <Directory "C:/xampp/htdocs/bkcheetahgit/web">
+    AllowOverride All
+    Allow from All
+  </Directory>
+
+  Alias /sf C:/xampp/htdocs/bkcheetahgit/lib/vendor/symfony/data/web/sf
+  <Directory "C:/xampp/htdocs/bkcheetahgit/lib/vendor/symfony/data/web/sf">
+    AllowOverride All
+    Allow from All
+  </Directory>
+</VirtualHost>
+
+
+
+
+
+// helper function
+var createObject = function (o) {
+  function F() {}
+  F.prototype = o;
+  return new F();
+};
+
+function Bicycle(tires) {
+    var that = createObject(Bicycle.prototype); // inherit from Bicycle.prototype
+    that.tires = tires;                         // in this case an empty object
+    that.toString = function () {
+      return 'Bicycle with ' + that.tires + ' tires.';
+    };
+
+    return that;
+}
+
+var bicycle1 = Bicycle(2);
+
+bicycle1 instanceof Bicycle; // true
+
+
+serving
+-------
+bookcheetah.blade.php - enable js - uservoice, bottomsocial
+vanilla config.php, delete ini
+wordpress wp-config.php

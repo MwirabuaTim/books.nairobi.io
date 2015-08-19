@@ -1,0 +1,38 @@
+{
+	"require": {
+		"laravel/framework": "4.0.*",
+		"way/generators": "dev-master",
+		"ext-curl": "*",
+        "taylorotwell/laravel-oauth2": "0.2.*",
+		
+		"philo/laravel-twitter": "dev-master"
+	},
+	"autoload": {
+		"classmap": [
+			"app/commands",
+			"app/controllers",
+			"app/models",
+			"app/database/migrations",
+			"app/database/seeds",
+			"app/tests/TestCase.php",
+			"app/amazonecs/lib",
+			"app/amazonsearch",
+			"app/symfonyauth"
+		]
+	},
+	"scripts": {
+		"pre-update-cmd": [
+			"php artisan clear-compiled"
+		],
+		"post-install-cmd": [
+			"php artisan optimize"
+		],
+		"post-update-cmd": [
+			"php artisan optimize"
+		]
+	},
+	"config": {
+		"preferred-install": "dist"
+	},
+	"minimum-stability": "dev"
+}
